@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:readmore/readmore.dart';
-import 'package:tourism_app/models/destination_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:readmore/readmore.dart';
 import 'package:tourism_app/models/activity_model.dart';
+import 'package:tourism_app/models/destination_model.dart';
 
 class DestinationScreen extends StatefulWidget {
   DestinationScreen({this.destination});
@@ -142,18 +142,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                 return Stack(
                   children: <Widget>[
                     Container(
-                      children:<Widget>[
-
-                    margin: EdgeInsets.fromLTRB(40.0, 5.0, 20.0, 5.0),
-                    height: height,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20.0),
-                ),
-                ]
                       margin: EdgeInsets.fromLTRB(40.0, 5.0, 20.0, 5.0),
-                      height: height,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -260,10 +249,21 @@ class _DestinationScreenState extends State<DestinationScreen> {
                             Column(
                               children: <Widget>[
                                 SingleChildScrollView(
-                                  child: ReadMoreText('The Victoria Memorial is a large marble building, which is considered to be the pride of Kolkata. Built between 1906 and 1921, it is dedicated to the memory of Queen Victoria. Now, it is a museum and a popular tourist spot under the Ministry of Culture', trimLines: 1, textAlign: TextAlign.justify, trimMode: TrimMode.Line, trimCollapsedText: 'Show More', trimExpandedText: 'Show Less',
-                                      lessStyle: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w600, color: Colors.grey),
-                                      moreStyle: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w600, color: Colors.grey))
-                                )
+                                    child: ReadMoreText(
+                                        'The Victoria Memorial is a large marble building, which is considered to be the pride of Kolkata. Built between 1906 and 1921, it is dedicated to the memory of Queen Victoria. Now, it is a museum and a popular tourist spot under the Ministry of Culture',
+                                        trimLines: 3,
+                                        textAlign: TextAlign.justify,
+                                        trimMode: TrimMode.Line,
+                                        trimCollapsedText: 'Show More',
+                                        trimExpandedText: 'Show Less',
+                                        lessStyle: TextStyle(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey),
+                                        moreStyle: TextStyle(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.grey)))
                               ],
                             )
                           ],
