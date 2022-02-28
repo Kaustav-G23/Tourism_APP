@@ -76,6 +76,9 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView(
           padding: EdgeInsets.symmetric(vertical: 30.0),
           children: <Widget>[
+            Image(
+              image: AssetImage('assets/images/Compass.jpg'),
+            ),
             // Padding(
             //   padding: EdgeInsets.only(left: 20.0, right: 120.0),
             //   child: Text(
@@ -99,6 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
             //   )
             //       .toList(),
             // ),
+
+
             SizedBox(
               height: 20.0,
             ),
